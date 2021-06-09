@@ -42,6 +42,6 @@ app.get('/weather', (req, res) => {
 
 
 
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, () => {
     console.log('Server is running at 4000 port')
 })
